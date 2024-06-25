@@ -24,6 +24,22 @@ avgGrade.foreach(println)
 // 保存为文件
 avgGrade.saveAsTextFile('D:\\wer\\DeskData\\2.txt')
 ```
+
+### 分组，组内值排序取前三
+
+```
+    val data = sc.textFile('D:\\wer\\DeskData\\1.txt')
+    val result = data.map(line => {
+        val fields = line.split(' ')
+        (fields(0), fields(1).toInt)
+      })
+      // 班级前三名
+      .groupByKey().mapValues(iter => iter.toList.sortWith(_ > _).take(3))
+      // 排序班级
+      .sortByKey()
+
+    result.foreach(println)
+```
 。">
 <meta property="og:title" content="大数据期末复习">
 <meta property="og:description" content="### RDD求平均数
@@ -40,6 +56,22 @@ avgGrade.foreach(println)
 
 // 保存为文件
 avgGrade.saveAsTextFile('D:\\wer\\DeskData\\2.txt')
+```
+
+### 分组，组内值排序取前三
+
+```
+    val data = sc.textFile('D:\\wer\\DeskData\\1.txt')
+    val result = data.map(line => {
+        val fields = line.split(' ')
+        (fields(0), fields(1).toInt)
+      })
+      // 班级前三名
+      .groupByKey().mapValues(iter => iter.toList.sortWith(_ > _).take(3))
+      // 排序班级
+      .sortByKey()
+
+    result.foreach(println)
 ```
 。">
 <meta property="og:type" content="article">
@@ -112,6 +144,19 @@ avgGrade.foreach(println)
 
 // 保存为文件
 avgGrade.saveAsTextFile("D:\\wer\\DeskData\\2.txt")
+</code></pre>
+<h3>分组，组内值排序取前三</h3>
+<pre class="notranslate"><code class="notranslate">    val data = sc.textFile("D:\\wer\\DeskData\\1.txt")
+    val result = data.map(line =&gt; {
+        val fields = line.split(" ")
+        (fields(0), fields(1).toInt)
+      })
+      // 班级前三名
+      .groupByKey().mapValues(iter =&gt; iter.toList.sortWith(_ &gt; _).take(3))
+      // 排序班级
+      .sortByKey()
+
+    result.foreach(println)
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -170,11 +215,7 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-cmButton=document.getElementById("cmButton");
-    span=document.createElement("span");
-    span.setAttribute("class","Counter");
-    span.innerHTML="1";
-    cmButton.appendChild(span);
+
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");

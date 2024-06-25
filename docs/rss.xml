@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>weng的博客</title><link>https://weng235.github.io/weng23.github.io</link><description>记录一些有趣的事儿~</description><copyright>weng的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154400523?v=4</url><title>avatar</title><link>https://weng235.github.io/weng23.github.io</link></image><lastBuildDate>Tue, 25 Jun 2024 01:30:13 +0000</lastBuildDate><managingEditor>weng的博客</managingEditor><ttl>60</ttl><webMaster>weng的博客</webMaster><item><title>大数据期末复习</title><link>https://weng235.github.io/weng23.github.io/post/da-shu-ju-qi-mo-fu-xi.html</link><description>### RDD求平均数&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>weng的博客</title><link>https://weng235.github.io/weng23.github.io</link><description>记录一些有趣的事儿~</description><copyright>weng的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/154400523?v=4</url><title>avatar</title><link>https://weng235.github.io/weng23.github.io</link></image><lastBuildDate>Tue, 25 Jun 2024 06:20:10 +0000</lastBuildDate><managingEditor>weng的博客</managingEditor><ttl>60</ttl><webMaster>weng的博客</webMaster><item><title>大数据期末复习</title><link>https://weng235.github.io/weng23.github.io/post/da-shu-ju-qi-mo-fu-xi.html</link><description>### RDD求平均数&#13;
 &#13;
 ```&#13;
 val gradeRDD = sc.textFile('D:\\DeskData\\1.txt')&#13;
@@ -30,4 +30,4 @@ avgGrade.saveAsTextFile('D:\\wer\\DeskData\\2.txt')&#13;
 &#13;
     result.foreach(println)&#13;
 ```&#13;
-。</description><guid isPermaLink="true">https://weng235.github.io/weng23.github.io/post/da-shu-ju-qi-mo-fu-xi.html</guid><pubDate>Mon, 24 Jun 2024 10:44:12 +0000</pubDate></item><item><title>这是一个测试Title</title><link>https://weng235.github.io/weng23.github.io/post/zhe-shi-yi-ge-ce-shi-Title.html</link><description>这里是正文。</description><guid isPermaLink="true">https://weng235.github.io/weng23.github.io/post/zhe-shi-yi-ge-ce-shi-Title.html</guid><pubDate>Mon, 24 Jun 2024 04:10:06 +0000</pubDate></item></channel></rss>
+。</description><guid isPermaLink="true">https://weng235.github.io/weng23.github.io/post/da-shu-ju-qi-mo-fu-xi.html</guid><pubDate>Mon, 24 Jun 2024 10:44:12 +0000</pubDate></item></channel></rss>
